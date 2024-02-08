@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 40vh, left 50vw top 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+span, p {
+    color: var(--Dark-gray);
+}
+
+.container {
+    background-color: white;
+    margin: 175px auto;
+    height: 380px;
+    width: 350px;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-color {
+    height: 200px;
+    background-color: var(--Very-dark-desaturated-blue);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header img {
+    border-radius: 50%;
+    border: 4px solid white;
+    margin: -50px;
+    margin-bottom: 2px;
+}
+
+.header h2 {
+    height: 2px;
+    font-size: 18px;
+}
+
+.header p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+.footer {
+    display: flex;
+    height: 100px;
+    width: 350px;
+    border-top: 1px solid var(--Dark-gray);
+}
+
+.footer div {
+    margin: auto;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer .text-position {
+    margin: auto 50px;
+}
+
+.footer div h2 {
+    height: 10px;
+}
